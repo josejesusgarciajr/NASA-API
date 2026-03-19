@@ -16,8 +16,9 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReact", policy =>
     {
         policy.WithOrigins(
-            "http://localhost:5173",           // local dev
-            "https://josejesusgarciajr.dev"    // your production site
+            "http://localhost:5173",               // local dev
+            "https://josejesusgarciajr.dev",       // production without www
+            "https://www.josejesusgarciajr.dev"    // production with www
         )
         .AllowAnyHeader()
         .AllowAnyMethod();

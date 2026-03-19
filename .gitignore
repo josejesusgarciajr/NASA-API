@@ -10,6 +10,9 @@ obj/
 # Secrets - never commit these
 appsettings.Development.json
 
+# Publish profiles - contains server credentials
+Properties/PublishProfiles/
+
 # OS files
 .DS_Store
 Thumbs.db
